@@ -22,17 +22,13 @@
 		<meta property="og:type" content="business.business">
 		<meta property="og:title" content="{{ .Title }}">
 		<meta property="og:url" content="{{ .Permalink }}">
-		{{ if $.Page.Params.image }}
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ $.Page.Params.image }}">
-{{ end }}
+
 
 {{ if .Params.image }}
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ .Params.image }}">
+<meta property="og:image" content="{{ .BaseURL }}{{ .Params.image }}">
 {{ end }}
 
-{{ if $.Params.image }}
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ $.Params.image }}">
-{{ end }}
+
 
 	</head>
 
