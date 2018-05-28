@@ -18,22 +18,11 @@
 		<link rel="manifest" href="/manifest.json">
 		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ff4400">
 		<meta name="theme-color" content="#fff">
-
-<!-- open graph -->
-          <meta property="og:type" content="website" />
-          <meta property="og:title" content="{{ if ne .URL "/" }}{{ .Title }} &middot; {{ end }}{{ .Site.Title }}"/>
-          <meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.description }}{{ end }}"/>
-          <meta property="og:site_name" content="{{ .Site.Title }}"/>
-          <meta property="og:url" content="{{ .Permalink }}"/>
-          <meta property="og:locale" content="ua">
-            {{ if .Params.og_image }}
-          <meta property="og:image" content="https://buchach.netlify.com{{ .Params.og_image | relURL }}"/>
-          <meta property="og:image:secure_url" content="{{ .Params.og_image | absURL }}"/>
-          {{ else }}
-          <meta property="og:image" content="https://buchach.netlify.com{{ .Site.Params.og_image | relURL }}"/>
-          <meta property="og:image:secure_url" content="{{ .Site.Params.og_image | absURL }}"/>
-          {{ end }}
-          <meta property="og:type" content="website"/>
+<!-- Open Graph -->
+		<meta property="og:type" content="business.business">
+		<meta property="og:title" content="Kaldi | Great coffee with a conscience">
+		<meta property="og:url" content="/">
+		<meta property="og:image" content="/og-image.jpg">
 
 	</head>
 
