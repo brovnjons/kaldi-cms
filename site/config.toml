@@ -2,3 +2,7 @@ baseurl = "https://buchach.netlify.com/"
 languageCode = "ua"
 title = "Головна"
 
+[params]
+  description = "Це тестовий сайт перевірка опису сайту"
+  images = ["og-image.jpg"]
+
